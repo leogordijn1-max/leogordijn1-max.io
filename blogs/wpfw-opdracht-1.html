@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WPFW Opdracht 1 | Leo Gordijn</title>
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <!-- NAVIGATIE -->
+    <nav class="navbar">
+      <div class="container">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html">Wie ben ik?</a></li>
+          <li>
+            <a href="../projecten-overzicht.html">Projecten overzicht</a>
+          </li>
+          <li><a href="../blog-overzicht.html">Blog overzicht</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- BLOG -->
+    <main class="blog-page">
+      <div class="blog-container">
+
+        <!-- INTRODUCTIE -->
+        <header class="blog-hero">
+          <span class="blog-label">WPFW • OPDRACHT 1</span>
+
+          <h1>Mijn portfolio website</h1>
+
+          <p>
+            Voor deze opdracht heb ik het fundament van mijn persoonlijke
+            portfoliosite gemaakt. In deze blog beschrijf ik mijn aanpak,
+            ontwerpkeuzes, problemen en wat ik tijdens de opdracht heb geleerd.
+          </p>
+
+          <div class="blog-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Flexbox</span>
+            <span>CSS Grid</span>
+            <span>Responsive</span>
+          </div>
+        </header>
+
+        <!-- 01 -->
+        <section class="blog-content">
+          <div class="blog-number">01</div>
+
+          <div>
+            <h2>De opdracht</h2>
+
+            <p>
+              Voor deze opdracht moest ik een statische en responsive
+              portfoliosite maken met minimaal drie pagina's: een Whoami-pagina,
+              een projectenoverzicht en een blogoverzicht. De pagina's moesten
+              via een werkende navigatie met elkaar verbonden zijn.
+            </p>
+
+            <p>
+              De website moest worden opgebouwd met semantische HTML5 en
+              responsive CSS3. Daarnaast moest ik mijn ontwerpkeuzes onderbouwen
+              aan de hand van minimaal twee gebruikersscenario's en kort de
+              request/response-cyclus van een website uitleggen.
+            </p>
+          </div>
+        </section>
+
+        <!-- 02 -->
+        <section class="blog-content">
+          <div class="blog-number">02</div>
+
+          <div>
+            <h2>Mijn aanpak</h2>
+
+            <p>
+              Omdat ik nog relatief nieuw ben met HTML en CSS ben ik begonnen
+              met het maken van de basisstructuur. Ik heb eerst de verschillende
+              HTML-pagina's aangemaakt en deze met een navigatiebalk aan elkaar
+              gekoppeld.
+            </p>
+
+            <p>
+              Tijdens het werken aan de website heb ik hulp en feedback gekregen
+              van meerdere groepsgenoten. Zij hebben mij onder andere geholpen
+              met tips voor de layout. Zo heb ik geleerd om een container te
+              gebruiken om de content een maximale breedte te geven en netjes in
+              het midden van de pagina te houden.
+            </p>
+
+            <p>
+              Ik heb daarnaast ChatGPT gebruikt voor uitleg en tips over HTML en
+              CSS. Vooral bij technieken die voor mij nieuw waren, zoals
+              Flexbox, CSS Grid, gradients, transitions en relatieve paden, heb
+              ik uitleg gevraagd om beter te begrijpen hoe ik deze kon
+              gebruiken.
+            </p>
+
+            <p>
+              Voor de vormgeving wilde ik een donkere website met meerdere
+              kleuren. Samen met ChatGPT heb ik dit idee verder uitgewerkt.
+              Uiteindelijk heb ik gekozen voor een donkere achtergrond waarin
+              blauwe en paarse kleuren geleidelijk in elkaar overlopen.
+            </p>
+
+            <p>
+              Naar aanleiding van feedback ben ik de layout ook als ontwerp gaan
+              uitwerken in Figma. Hierdoor kon ik eerst bepalen waar onderdelen
+              zoals de navigatie, teksten, afbeeldingen en kaarten moesten komen
+              voordat ik deze verder uitwerkte met HTML en CSS.
+            </p>
+          </div>
+        </section>
+
+        <!-- 03 -->
+        <section class="blog-content">
+          <div class="blog-number">03</div>
+
+          <div>
+            <h2>Gebruikersscenario's</h2>
+
+            <h3>Scenario 1 — Een bezoeker wil weten wie ik ben</h3>
+
+            <p>
+              Een docent, medestudent of andere bezoeker komt op mijn portfolio
+              en wil snel kunnen zien wie ik ben en wat ik doe. Daarom heb ik
+              mijn Whoami-pagina als startpagina gebruikt. Mijn naam en
+              informatie over mijn opleiding zijn hier direct zichtbaar.
+            </p>
+
+            <p>
+              Vanuit de navigatie kan de bezoeker vervolgens eenvoudig naar mijn
+              projecten en blog. Ook gebruik ik een container zodat de content
+              niet over de volledige breedte van een groot scherm wordt
+              uitgerekt en de tekst overzichtelijk blijft.
+            </p>
+
+            <h3>Scenario 2 — Een bezoeker wil mijn werk bekijken</h3>
+
+            <p>
+              Een bezoeker wil kunnen bekijken aan welke projecten en opdrachten
+              ik tijdens mijn opleiding heb gewerkt. Daarom heb ik het
+              projectenoverzicht verdeeld in de categorieën Project, WPFW en
+              Database.
+            </p>
+
+            <p>
+              Binnen iedere categorie worden de opdrachten als kaarten
+              weergegeven. Hierdoor kan een bezoeker snel door mijn werk heen
+              kijken zonder eerst een grote hoeveelheid tekst te hoeven lezen.
+            </p>
+
+            <p>
+              Op kleinere beeldschermen worden de kaarten anders verdeeld of
+              onder elkaar geplaatst. Hierdoor blijft het overzicht ook op
+              bijvoorbeeld een telefoon goed bruikbaar.
+            </p>
+          </div>
+        </section>
+
+        <!-- 04 -->
+        <section class="blog-content">
+          <div class="blog-number">04</div>
+
+          <div>
+            <h2>Mijn ontwerpkeuzes</h2>
+
+            <p>
+              Voor de algemene uitstraling wilde ik een donkere website maken,
+              maar ik wilde niet dat de hele achtergrond uit één kleur zou
+              bestaan. Daarom wilde ik meerdere kleuren gebruiken terwijl de
+              algemene uitstraling donker bleef.
+            </p>
+
+            <p>
+              Samen met ChatGPT heb ik gekeken hoe ik dit idee kon uitwerken.
+              Uiteindelijk heb ik gekozen voor een combinatie van donkerblauw en
+              paars. Met gradients lopen deze kleuren geleidelijk in elkaar over
+              en krijgt de achtergrond meer diepte.
+            </p>
+
+            <p>
+              De blauwe en paarse kleuren komen ook terug bij links, borders,
+              tags en hover-effecten. De kaarten hebben een licht transparante
+              achtergrond zodat ze zichtbaar losstaan van de achtergrond, maar
+              wel binnen dezelfde stijl passen.
+            </p>
+
+            <p>
+              Voor de projecten en blogs heb ik kaarten gebruikt. Hierdoor zijn
+              de verschillende opdrachten duidelijk van elkaar gescheiden en
+              kunnen bezoekers makkelijker door de pagina heen kijken.
+            </p>
+          </div>
+        </section>
+
+        <!-- 05 -->
+        <section class="blog-content">
+          <div class="blog-number">05</div>
+
+          <div>
+            <h2>Technische keuzes</h2>
+
+            <p>
+              Voor de structuur van de website gebruik ik HTML en voor de
+              vormgeving CSS. Ik heb geprobeerd semantische HTML-elementen te
+              gebruiken, zoals <code>nav</code>, <code>main</code>,
+              <code>header</code>, <code>section</code>, <code>article</code> en
+              <code>footer</code>.
+            </p>
+
+            <p>
+              Voor verschillende onderdelen van de layout gebruik ik Flexbox. In
+              mijn navigatie gebruik ik bijvoorbeeld
+              <code>display: flex</code> en <code>margin-right: auto</code> om
+              Home links te houden en de andere navigatielinks rechts te
+              plaatsen.
+            </p>
+
+            <p>
+              Voor het projectenoverzicht gebruik ik CSS Grid. Hiermee kan ik
+              meerdere kaarten naast elkaar plaatsen zonder iedere kaart
+              afzonderlijk te hoeven positioneren.
+            </p>
+
+            <p>
+              Ook gebruik ik <code>:hover</code> en <code>transition</code>.
+              Hierdoor veranderen kaarten en links geleidelijk wanneer de
+              gebruiker er met de muis overheen gaat.
+            </p>
+
+            <p>
+              Alle pagina's maken gebruik van hetzelfde CSS-bestand. Hierdoor
+              kan ik algemene onderdelen zoals de achtergrond, navigatie en
+              containers op één plek aanpassen.
+            </p>
+          </div>
+        </section>
+
+        <!-- 06 -->
+        <section class="blog-content">
+          <div class="blog-number">06</div>
+
+          <div>
+            <h2>Responsive design en toegankelijkheid</h2>
+
+            <p>
+              De website moet niet alleen op een computer werken, maar ook op
+              kleinere beeldschermen. Daarom gebruik ik media queries in mijn
+              CSS. Hiermee kan ik de layout aanpassen wanneer het scherm smaller
+              wordt.
+            </p>
+
+            <p>
+              Projectkaarten die op een groot scherm naast elkaar staan, kunnen
+              op een kleiner scherm bijvoorbeeld onder elkaar worden geplaatst.
+              Ook kan de introductie op de Whoami-pagina van een horizontale
+              naar een verticale layout veranderen.
+            </p>
+
+            <p>
+              Voor de toegankelijkheid probeer ik een logische structuur met
+              headings te gebruiken en geef ik afbeeldingen een duidelijke
+              alt-tekst. Ook gebruik ik lichte tekst op de donkere achtergrond
+              zodat er voldoende contrast is.
+            </p>
+
+            <p>
+              Door semantische elementen te gebruiken krijgt de HTML daarnaast
+              meer betekenis en is de structuur van de pagina duidelijker.
+            </p>
+          </div>
+        </section>
+
+        <!-- 07 -->
+        <section class="blog-content">
+          <div class="blog-number">07</div>
+
+          <div>
+            <h2>Request/response-cyclus</h2>
+
+            <p>
+              Wanneer iemand mijn website bezoekt, stuurt de browser een
+              HTTP-request naar de webserver voor de HTML-pagina die de
+              gebruiker wil bekijken. De server stuurt deze pagina vervolgens
+              terug in een HTTP-response.
+            </p>
+
+            <div class="request-flow">
+              Browser → HTTP Request → Webserver
+              <br />
+              Browser ← HTTP Response ← Webserver
+            </div>
+
+            <p>
+              Nadat de HTML is ontvangen, ziet de browser welke andere bestanden
+              nodig zijn. Voor bestanden zoals
+              <code>style.css</code> en afbeeldingen worden daarom aparte
+              requests verstuurd.
+            </p>
+
+            <p>
+              Nadat deze bestanden door de server zijn teruggestuurd, gebruikt
+              de browser de HTML voor de structuur, CSS voor de vormgeving en de
+              afbeeldingen om uiteindelijk de volledige pagina weer te geven.
+            </p>
+          </div>
+        </section>
+
+        <!-- 08 -->
+        <section class="blog-content">
+          <div class="blog-number">08</div>
+
+          <div>
+            <h2>Problemen en oplossingen</h2>
+
+            <h3>Navigatie met float</h3>
+
+            <p>
+              In eerste instantie gebruikte ik <code>float</code> om Home links
+              en de andere navigatie-items rechts te plaatsen. Dit maakte de
+              layout lastiger te beheren. Met hulp van ChatGPT heb ik geleerd
+              hoe ik hiervoor Flexbox kon gebruiken.
+            </p>
+
+            <h3>De intro class</h3>
+
+            <p>
+              Bij mijn introductie gebruikte ik eerst een
+              <code>&lt;intro&gt;</code>-element, terwijl mijn CSS naar
+              <code>.intro</code> verwees. Ik heb hierdoor geleerd dat de punt
+              in CSS naar een class verwijst. Ik heb dit daarom aangepast naar
+              een semantisch HTML-element met <code>class="intro"</code>.
+            </p>
+
+            <h3>Relatieve paden</h3>
+
+            <p>
+              Toen ik mijn blogpagina in een aparte blogs-map plaatste, werkten
+              mijn CSS en navigatielinks niet meer. Ik heb hierdoor geleerd hoe
+              relatieve paden werken. Met <code>../</code> kan ik vanuit de
+              blogs-map één map teruggaan om bijvoorbeeld
+              <code>style.css</code> te bereiken.
+            </p>
+
+            <h3>Layout</h3>
+
+            <p>
+              Het verdelen van de verschillende onderdelen over de pagina vond
+              ik in het begin lastig. Meerdere groepsgenoten hebben mij hierbij
+              tips gegeven. Vooral het gebruik van een container hielp om de
+              content op verschillende pagina's op dezelfde manier uit te
+              lijnen.
+            </p>
+          </div>
+        </section>
+
+        <!-- 09 -->
+        <section class="blog-content">
+          <div class="blog-number">09</div>
+
+          <div>
+            <h2>Wat heb ik geleerd?</h2>
+
+            <p>
+              Tijdens deze opdracht heb ik veel nieuwe basiskennis opgedaan over
+              HTML en CSS. Vooral Flexbox, CSS Grid, containers, gradients,
+              transitions, relatieve paden en responsive CSS waren technieken
+              waar ik vooraf nog weinig ervaring mee had.
+            </p>
+
+            <p>
+              Ook begrijp ik nu beter waarom semantische HTML belangrijk is. In
+              plaats van voor ieder onderdeel een div te gebruiken, kan ik met
+              elementen zoals <code>nav</code>, <code>section</code>,
+              <code>article</code> en <code>footer</code> duidelijker aangeven
+              wat een onderdeel van de pagina betekent.
+            </p>
+
+            <p>
+              Daarnaast heb ik geleerd dat het handig is om eerst na te denken
+              over het ontwerp voordat ik alles direct in HTML en CSS probeer te
+              maken. Door eerst een globale layout te maken, weet ik beter waar
+              ik tijdens het programmeren naartoe werk.
+            </p>
+
+            <p>
+              Ook heb ik gemerkt dat feedback en hulp vragen nuttig zijn.
+              Meerdere groepsgenoten hebben mij geholpen met de layout en ik heb
+              ChatGPT gebruikt om uitleg te krijgen over technieken die voor mij
+              nog nieuw waren.
+            </p>
+
+            <p>
+              Bij een volgende website zou ik daarom eerder beginnen met een
+              globaal ontwerp. Daarna zou ik eerst de HTML-structuur maken en
+              vervolgens de CSS gebruiken om het ontwerp verder uit te werken.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Leo Gordijn. Alle rechten voorbehouden.</p>
+      </div>
+    </footer>
+  </body>
+</html>
