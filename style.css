@@ -71,14 +71,15 @@ body {
   font-size: 48px;
 }
 
-.intro h3 {
+.intro h2 {
   margin: 0;
   color: hsl(249, 100%, 87%);
   font-size: 22px;
 }
 
 .intro img {
-  width: 350px;
+  width: 300px;
+  height: 500px;
   border-radius: 20px;
 }
 
