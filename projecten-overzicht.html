@@ -1,110 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projecten | Leo Gordijn</title>
     <link rel="stylesheet" href="style.css">
-  </head>
+</head>
 
-  <body>
+<body>
+
     <nav class="navbar">
-      <div class="container">
-        <ul>
-          <li><a href="index.html">Leo Gordijn</a></li>
-          <li><a href="index.html">Wie ben ik?</a></li>
-          <li>
-            <a href="projecten-overzicht.html">Projecten overzicht</a>
-          </li>
-          <li>
-            <a href="blog-overzicht.html">Blog overzicht</a>
-          </li>
-        </ul>
-      </div>
+        <div class="nav-container">
+            <a class="nav-home" href="index.html">Leo Gordijn</a>
+
+            <ul class="nav-links">
+                <li><a href="whoami.html">Whoami</a></li>
+                <li><a href="projecten-overzicht.html">Projecten</a></li>
+                <li><a href="blog-overzicht.html">Blog</a></li>
+            </ul>
+
+            <a class="nav-contact" href="contact.html">Contact</a>
+        </div>
     </nav>
 
     <main class="container">
-      <header class="page-header">
-        <h1>Mijn projecten</h1>
-        <p>Hier laat ik zien waar ik tijdens mijn opleiding aan heb gewerkt.</p>
-      </header>
 
-      <section class="card project">
-        <h2>Hotel Simulation</h2>
+        <header class="page-header">
+            <h1>Projecten</h1>
+            <p>
+                Hier vind je projecten waar ik tijdens mijn opleiding
+                en in mijn vrije tijd aan heb gewerkt.
+            </p>
+        </header>
 
-        <p>
-          Hotel Simulation is een groepsproject dat ik tijdens mijn opleiding
-          heb gemaakt. Het doel van het project was om met Java een simulatie
-          van een hotel te ontwikkelen.
-        </p>
+        <section class="project-category">
+            <h2>Mijn projecten</h2>
 
-        <p>
-          In de simulatie bewegen gasten door het hotel en maken ze gebruik van
-          verschillende faciliteiten, zoals hotelkamers, het restaurant, de
-          fitness en de bioscoop.
-        </p>
+            <div class="project-filters">
+                <button data-filter="alle">Alle</button>
+                <button data-filter="school">School</button>
+                <button data-filter="persoonlijk">Persoonlijk</button>
+            </div>
 
-        <div class="skill-list">
-          <span>Java</span>
-        </div>
-      </section>
+            <div id="project-list"></div>
+        </section>
 
-      <section class="card project">
-        <h2>Functionaliteiten</h2>
-
-        <p>
-          In de simulatie kunnen gasten inchecken, door het hotel bewegen,
-          verschillende faciliteiten bezoeken en weer uitchecken.
-        </p>
-
-        <p>
-          De simulatie kan gestart, gepauzeerd en gestopt worden. Ook kan de
-          snelheid van de simulatie worden aangepast en kunnen verschillende
-          scenario's worden gestart.
-        </p>
-
-        <p>
-          Daarnaast bevat de simulatie schoonmakers die taken krijgen wanneer
-          hotelkamers schoongemaakt moeten worden.
-        </p>
-      </section>
-
-      <section class="card project">
-        <h2>Mijn bijdrage</h2>
-
-        <p>
-          Mijn belangrijkste bijdrage aan het project was het maken van de
-          classes voor de schoonmakers. De schoonmakers kunnen schoonmaaktaken
-          krijgen, naar de juiste kamer bewegen en de schoonmaaktaak uitvoeren.
-        </p>
-
-        <p>
-          Daarnaast heb ik meegewerkt aan het UML-diagram van het project.
-          Hiermee brachten we de verschillende classes en hun onderlinge
-          relaties in kaart.
-        </p>
-      </section>
-
-      <section class="card project">
-        <h2>Wat heb ik geleerd?</h2>
-
-        <p>
-          Tijdens dit project heb ik meer geleerd over programmeren met Java en
-          het werken met verschillende classes binnen één applicatie.
-        </p>
-
-        <p>
-          Ook heb ik ervaring opgedaan met samenwerken aan een groter
-          programmeerproject en met het gebruiken van UML om de structuur van
-          een programma weer te geven.
-        </p>
-      </section>
     </main>
 
     <footer>
-      <div class="container">
-        <p>&copy; 2026 Leo Gordijn. Alle rechten voorbehouden.</p>
-      </div>
+        <p>© 2026 Leo Gordijn</p>
     </footer>
-  </body>
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>

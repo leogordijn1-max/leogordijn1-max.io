@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Neem contact op met Leo Gordijn." />
+    <title>Contact | Leo Gordijn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="nav-home" href="index.html">Leo Gordijn</a>
+
+        <ul class="nav-links">
+          <li><a href="whoami.html">Whoami</a></li>
+          <li><a href="projecten-overzicht.html">Projecten</a></li>
+          <li><a href="blog-overzicht.html">Blog</a></li>
+        </ul>
+
+        <a class="nav-contact" href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      <header class="page-header">
+        <h1>Contact</h1>
+        <p>
+          Heb je een vraag of wil je contact met mij opnemen? Stuur mij gerust
+          een bericht.
+        </p>
+      </header>
+
+      <section class="contact-page">
+        <div class="contact-info">
+          <h2>Neem contact op</h2>
+
+          <p>
+            Je kunt mij bereiken via mijn e-mailadres of het contactformulier.
+          </p>
+
+          <h3>E-mail</h3>
+
+          <a href="mailto:25150952@student.hhs.nl"> 25150952@student.hhs.nl </a>
+        </div>
+
+        <form class="contact-form" novalidate>
+          <div>
+            <label for="name">Naam</label>
+            <input type="text" id="name" aria-describedby="name-error" />
+            <p id="name-error" class="error"></p>
+          </div>
+
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" aria-describedby="email-error" />
+            <p id="email-error" class="error"></p>
+          </div>
+
+          <div>
+            <label for="message">Bericht</label>
+            <textarea
+              id="message"
+              minlength="10"
+              aria-describedby="message-error"
+            ></textarea>
+            <p id="message-error" class="error"></p>
+          </div>
+
+          <button type="submit">Versturen</button>
+
+          <p id="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Leo Gordijn</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

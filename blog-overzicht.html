@@ -2,31 +2,25 @@
 
 <html lang="nl">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Blog | Leo Gordijn</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <nav class="navbar">
-      <div class="container">
-        <ul>
-          <li><a href="index.html">Leo Gordijn</a></li>
+      <div class="nav-container">
+        <a class="nav-home" href="index.html">Leo Gordijn</a>
 
-          <li>
-            <a href="index.html">Wie ben ik?</a>
-          </li>
-
-          <li>
-            <a href="projecten-overzicht.html">Projecten overzicht</a>
-          </li>
-
-          <li>
-            <a href="blog-overzicht.html">Blog overzicht</a>
-          </li>
+        <ul class="nav-links">
+          <li><a href="whoami.html">Whoami</a></li>
+          <li><a href="projecten-overzicht.html">Projecten</a></li>
+          <li><a href="blog-overzicht.html">Blog</a></li>
         </ul>
+
+        <a class="nav-contact" href="contact.html">Contact</a>
       </div>
     </nav>
 
@@ -36,28 +30,429 @@
           <h1>Mijn blog</h1>
 
           <p>
-            In mijn blog beschrijf ik mijn voortgang, gemaakte keuzes en wat ik
-            tijdens mijn opdrachten heb geleerd.
+            In deze blog laat ik stap voor stap zien hoe ik van het leren van de
+            basis van HTML en CSS naar mijn uiteindelijke website ben gegaan.
           </p>
         </header>
 
-        <section class="project-category">
-          <h2>WPFW</h2>
-          <p>Mijn opdrachten voor WPFW.</p>
+        <article class="card blog-item">
+          <h2>WPFW Opdracht 1</h2>
+          <p>Portfolio website</p>
 
-          <div class="grid">
-            <article class="card">
-              <h3>Opdracht 1 — Portfolio website</h3>
+          <button class="blog-toggle">Meer informatie</button>
 
-              <p>
-                Het ontwikkelen van mijn portfoliosite en de keuzes die ik
-                daarbij heb gemaakt.
-              </p>
+          <div class="blog-extra" hidden>
+            <!-- STAP 1 -->
 
-              <a href="blogs/wpfw-opdracht-1.html">Lees meer →</a>
-            </article>
+            <section class="blog-content card">
+              <div class="blog-number">01</div>
+
+              <div>
+                <h2>Begin van de opdracht</h2>
+
+                <p>
+                  Voor deze opdracht moest ik een statische en responsive
+                  portfoliosite maken. De website moest minimaal bestaan uit een
+                  Whoami-pagina, een projectenoverzicht en een blogoverzicht.
+                  Deze pagina's moesten met een werkende navigatie met elkaar
+                  verbonden zijn.
+                </p>
+
+                <p>
+                  Aan het begin van de opdracht had ik nog weinig ervaring met
+                  HTML en CSS. Daarom ben ik eerst begonnen met het leren van de
+                  basis voordat ik de website verder ging uitwerken.
+                </p>
+              </div>
+            </section>
+
+            <!-- STAP 2 -->
+
+            <section class="blog-content card">
+              <div class="blog-number">02</div>
+
+              <div>
+                <h2>De basis van HTML en CSS leren</h2>
+
+                <p>
+                  Mijn eerste stap was het leren en oefenen van de basis van
+                  HTML en CSS. Dit heb ik gedaan tijdens de lessen en door
+                  video's van Bro Code te bekijken.
+                </p>
+
+                <p>
+                  Ik heb hierbij onder andere geleerd hoe een HTML-pagina is
+                  opgebouwd en hoe ik met CSS de vormgeving van een pagina kan
+                  aanpassen. Ook heb ik geleerd over onderwerpen zoals kleuren,
+                  het box model en verschillende manieren om elementen op een
+                  pagina te plaatsen.
+                </p>
+
+                <p>
+                  Voor mijn kleuren ben ik HSL gaan gebruiken. Hiermee kan ik de
+                  hue, saturation en lightness van een kleur aanpassen. Ik ben
+                  vervolgens zelf gaan experimenteren met verschillende donkere
+                  kleuren en paarse accenten.
+                </p>
+
+                <p>
+                  Tijdens het oefenen maakte ik eerst kleine onderdelen om te
+                  kijken hoe verschillende HTML-elementen en CSS-regels werkten.
+                  Daarna ben ik deze kennis gaan gebruiken voor mijn eigen
+                  portfolio.
+                </p>
+              </div>
+            </section>
+
+            <!-- STAP 3 -->
+
+            <section class="blog-content card">
+              <div class="blog-number">03</div>
+
+              <div>
+                <h2>Eerste versie van mijn website</h2>
+
+                <p>
+                  Nadat ik de basis beter begreep, ben ik begonnen met de eerste
+                  versie van mijn website. Ik heb eerst de verschillende
+                  HTML-pagina's aangemaakt en een navigatie toegevoegd zodat ik
+                  tussen de pagina's kon wisselen.
+                </p>
+
+                <p>
+                  In het begin gebruikte ik <code>float</code> om onderdelen van
+                  mijn navigatie naast elkaar te plaatsen. Dit werkte, maar ik
+                  merkte dat het lastiger werd om de elementen goed uit te
+                  lijnen.
+                </p>
+
+                <p>
+                  Ook liep ik tegen problemen aan toen ik mijn blogpagina in een
+                  aparte map plaatste. Mijn CSS en links werkten toen niet meer
+                  zoals verwacht. Hierdoor heb ik geleerd hoe relatieve paden
+                  werken. Vanuit mijn blogs-map gebruik ik bijvoorbeeld
+                  <code>../</code> om één map terug te gaan.
+                </p>
+              </div>
+            </section>
+
+            <!-- STAP 4 -->
+
+            <section class="blog-content card">
+              <div class="blog-number">04</div>
+
+              <div>
+                <h2>Een ontwerp maken in Figma</h2>
+
+                <p>
+                  Nadat ik eerst direct in HTML en CSS was begonnen, kreeg ik
+                  als feedback dat het handiger was om eerst beter na te denken
+                  over het ontwerp. Daarom heb ik mijn website verder uitgewerkt
+                  in Figma.
+                </p>
+
+                <p>
+                  Bij het ontwerpen heb ik gekeken naar mijn
+                  gebruikersscenario's. Een belangrijke gebruiker van mijn
+                  portfolio is bijvoorbeeld een recruiter die snel wil kunnen
+                  zien wie ik ben, wat ik kan en aan welke projecten ik heb
+                  gewerkt. Daarom wilde ik de website overzichtelijk houden en
+                  ervoor zorgen dat de belangrijkste onderdelen makkelijk te
+                  vinden zijn.
+                </p>
+
+                <p>
+                  inspiratie voor mijn kleurgebruik heb ik gekeken op Mooiste
+                  Websites. Hier kwam ik de website van Audience Republic tegen.
+                  Deze website gebruikt voornamelijk donkergrijs, wit en paars
+                  en wordt omschreven als modern en minimalistisch. Dit vond ik
+                  goed passen bij de uitstraling die ik voor mijn eigen
+                  portfolio wilde.
+                </p>
+
+                <p>
+                  Ik heb dit ontwerp niet overgenomen, maar wel gebruikt als
+                  inspiratie. Voor mijn eigen website heb ik daarom gekozen voor
+                  een donkere achtergrond, lichte tekst en paarse accenten. Ook
+                  gebruik ik afgeronde cards om verschillende onderdelen van de
+                  website duidelijk van elkaar te scheiden.
+                </p>
+              </div>
+            </section>
+
+            <!-- STAP 5 -->
+
+            <section class="blog-content card">
+              <div class="blog-number">05</div>
+
+              <div>
+                <h2>Het ontwerp uitwerken</h2>
+
+                <p>
+                  Nadat ik mijn ontwerp verder had uitgewerkt, ben ik dit gaan
+                  toepassen in HTML en CSS. Hierbij heb ik geprobeerd mijn HTML
+                  logisch op te bouwen met semantische elementen zoals
+                  <code>nav</code>, <code>main</code>, <code>header</code>,
+                  <code>section</code> en <code>footer</code>.
+                </p>
+
+                <p>
+                  Voor de layout gebruik ik voornamelijk Flexbox en CSS Grid.
+                  Flexbox gebruik ik bijvoorbeeld bij mijn navigatie en intro,
+                  omdat ik daar elementen naast elkaar wil plaatsen en makkelijk
+                  wil kunnen uitlijnen. Voor onderdelen met meerdere cards
+                  gebruik ik CSS Grid, omdat ik daarmee de content
+                  overzichtelijk over rijen en kolommen kan verdelen.
+                </p>
+
+                <p>
+                  In het begin gebruikte ik op sommige plekken
+                  <code>float</code> om elementen naast elkaar te zetten. Later
+                  heb ik dit vervangen door Flexbox. Via MDN heb ik meer gelezen
+                  over Flexbox en Grid en begreep ik beter wanneer ik welke
+                  techniek kon gebruiken.
+                </p>
+
+                <p>
+                  oor kleinere onderdelen, zoals mijn skill-tags, gebruik ik
+                  Flexbox met <code>flex-wrap</code>. Hierdoor kunnen de tags
+                  automatisch naar een volgende regel gaan wanneer er niet
+                  genoeg ruimte is.
+                </p>
+              </div>
+            </section>
+
+            <!-- STAP 6 -->
+
+            <section class="blog-content card">
+              <div class="blog-number">06</div>
+
+              <div>
+                <h2>De website responsive maken</h2>
+
+                <p>
+                  Ik wilde dat mijn portfolio niet alleen op mijn eigen
+                  laptopscherm goed werkt. Een recruiter of andere bezoeker kan
+                  de website bijvoorbeeld ook op een tablet of telefoon openen.
+                  Daarom heb ik mijn website responsive gemaakt.
+                </p>
+
+                <p>
+                  Hiervoor gebruik ik Flexbox, CSS Grid en media queries. Op een
+                  groot scherm kunnen bijvoorbeeld meerdere cards naast elkaar
+                  staan. Wanneer het scherm kleiner wordt, worden dit minder
+                  kolommen en op een telefoon staan de cards uiteindelijk onder
+                  elkaar. Ook verandert mijn intro op een klein scherm van een
+                  horizontale naar een verticale indeling.
+                </p>
+
+                <p>
+                  Voor meer informatie over responsive design en media queries
+                  heb ik MDN gebruikt. Tijdens het maken heb ik de website
+                  daarnaast op verschillende schermgroottes bekeken om te
+                  controleren of de content leesbaar bleef en er geen
+                  horizontale scrollbar ontstond.
+                </p>
+
+                <p>
+                  Hiermee ondersteun ik ook mijn gebruikersscenario waarin een
+                  recruiter mijn portfolio op verschillende apparaten moet
+                  kunnen bekijken.
+                </p>
+              </div>
+            </section>
+
+            <!-- STAP 7 -->
+
+            <section class="blog-content card">
+              <div class="blog-number">07</div>
+
+              <div>
+                <h2>Testen en verbeteren</h2>
+
+                <p>
+                  Nadat de website grotendeels af was, heb ik verschillende
+                  controles uitgevoerd om te kijken wat ik nog kon verbeteren.
+                  Hiervoor heb ik onder andere de W3C HTML Checker en Google
+                  Lighthouse gebruikt.
+                </p>
+
+                <p>
+                  Met een HTML-validator heb ik mijn HTML gecontroleerd. Hierbij
+                  kwam ik er bijvoorbeeld achter dat ik na een
+                  <code>h1</code> direct een <code>h3</code> gebruikte. Ik heb
+                  dit aangepast naar een <code>h2</code> zodat de
+                  headingstructuur logisch blijft.
+                </p>
+
+                <p>
+                  Met Google Lighthouse heb ik mijn website gecontroleerd op
+                  onder andere performance, toegankelijkheid, best practices en
+                  SEO. Hierbij heb ik onder andere gekeken naar het
+                  kleurcontrast en het gebruik van alt-teksten bij afbeeldingen.
+                </p>
+
+                <p>
+                  Voor de toegankelijkheid van mijn kleurgebruik heb ik ook naar
+                  de WCAG-richtlijnen van W3C gekeken. Mijn website gebruikt
+                  lichte tekst op een donkere achtergrond. Ik heb gecontroleerd
+                  of er voldoende contrast tussen de tekst en achtergrond zit.
+                  Daarnaast gebruik ik paars vooral als accentkleur en niet als
+                  enige manier om informatie duidelijk te maken. Hierdoor blijft
+                  de inhoud ook begrijpelijk voor bezoekers die kleuren anders
+                  waarnemen.
+                </p>
+
+                <p>
+                  Door deze controles heb ik niet alleen gekeken of mijn website
+                  er goed uitziet, maar ook of de HTML goed is opgebouwd en de
+                  website bruikbaar en toegankelijk is voor verschillende
+                  bezoekers.
+                </p>
+              </div>
+            </section>
+
+            <!-- STAP 8 -->
+
+            <section class="blog-content card">
+              <div class="blog-number">08</div>
+
+              <div>
+                <h2>Request/response-cyclus</h2>
+
+                <p>
+                  Tijdens deze opdracht heb ik ook geleerd wat er gebeurt
+                  wanneer iemand mijn website opent. De browser stuurt eerst een
+                  HTTP-request naar de webserver om een HTML-pagina op te
+                  vragen. De server stuurt deze pagina vervolgens terug met een
+                  HTTP-response.
+                </p>
+
+                <div class="request-flow">
+                  Browser → HTTP Request → Webserver
+                  <br />
+                  Browser ← HTTP Response ← Webserver
+                </div>
+
+                <p>
+                  Nadat de browser de HTML heeft ontvangen, ziet deze welke
+                  andere bestanden nodig zijn. Voor bijvoorbeeld
+                  <code>style.css</code> en afbeeldingen worden aparte requests
+                  verstuurd.
+                </p>
+
+                <p>
+                  Wanneer deze bestanden zijn ontvangen, gebruikt de browser de
+                  HTML voor de structuur en de CSS voor de vormgeving om
+                  uiteindelijk de website weer te geven.
+                </p>
+              </div>
+            </section>
+
+            <!-- STAP 9 -->
+
+            <section class="blog-content card">
+              <div class="blog-number">09</div>
+
+              <div>
+                <h2>Wat heb ik geleerd?</h2>
+
+                <p>
+                  Aan het begin van deze opdracht had ik nog weinig ervaring met
+                  HTML en CSS. Tijdens het maken van mijn portfolio heb ik
+                  vooral geleerd door eerst de basis te leren en deze daarna
+                  zelf toe te passen en uit te proberen.
+                </p>
+
+                <p>
+                  Ik begrijp nu beter wanneer ik verschillende technieken kan
+                  gebruiken. Flexbox is handig wanneer ik elementen in één
+                  richting wil plaatsen en uitlijnen. CSS Grid gebruik ik
+                  wanneer ik een duidelijk raster met rijen en kolommen wil
+                  maken. Ook weet ik nu beter wanneer
+                  <code>flex-wrap</code> handig is.
+                </p>
+
+                <p>
+                  Daarnaast heb ik meer geleerd over responsive design, media
+                  queries, HSL-kleuren, relatieve paden en semantische HTML.
+                  Door mijn website te testen heb ik ook gezien waarom een goede
+                  headingstructuur, alt-teksten en voldoende kleurcontrast
+                  belangrijk zijn.
+                </p>
+
+                <p>
+                  Een belangrijk punt dat ik meeneem naar een volgende opdracht
+                  is dat ik eerder over het ontwerp wil nadenken. In het begin
+                  begon ik vrij snel met programmeren. Door later eerst mijn
+                  ontwerp in Figma uit te werken, had ik een duidelijker beeld
+                  van waar ik met mijn HTML en CSS naartoe wilde werken.
+                </p>
+              </div>
+            </section>
+
+            <section class="blog-content card">
+              <div class="blog-number">10</div>
+
+              <div>
+                <h2>Bronnen</h2>
+
+                <p>
+                  Tijdens deze opdracht heb ik verschillende bronnen gebruikt om
+                  HTML en CSS te leren en om meer informatie te vinden over de
+                  technieken die ik in mijn website gebruik.
+                </p>
+
+                <ul>
+                  <li>
+                    Bro Code: gebruikt voor het leren van de basis van HTML en
+                    CSS. Via deze video's heb ik onder andere meer geleerd over
+                    HTML-elementen, CSS en HSL-kleuren.
+                  </li>
+
+                  <li>
+                    Mooiste Websites – Audience Republic: gebruikt als
+                    inspiratie voor de uitstraling en het kleurgebruik van mijn
+                    website, voornamelijk de combinatie van een donkere
+                    achtergrond, lichte tekst en paarse accenten.
+                  </li>
+
+                  <li>
+                    MDN Web Docs: gebruikt om meer te leren over Flexbox en hoe
+                    elementen hiermee kunnen worden uitgelijnd.
+                  </li>
+
+                  <li>
+                    MDN Web Docs: gebruikt voor meer informatie over CSS Grid en
+                    het werken met rijen en kolommen.
+                  </li>
+
+                  <li>
+                    MDN Web Docs: gebruikt voor meer informatie over media
+                    queries en responsive design.
+                  </li>
+
+                  <li>
+                    Google Lighthouse: gebruikt om mijn website te testen op
+                    onder andere performance, toegankelijkheid, best practices
+                    en SEO. Hiermee heb ik gecontroleerd of er nog problemen
+                    waren met bijvoorbeeld kleurcontrast en toegankelijkheid.
+                  </li>
+
+                  <li>
+                    W3C HTML Checker: gebruikt om te controleren of mijn HTML
+                    correct is geschreven. De checker controleert
+                    HTML-documenten en geeft fouten en waarschuwingen weer.
+                    Hiermee heb ik mijn verschillende HTML-pagina's
+                    gecontroleerd. Zo ontdekte ik onder andere dat ik na een h1
+                    direct een h3 gebruikte. Ik heb dit aangepast naar een h2
+                    zodat de headingstructuur logischer is.
+                  </li>
+                </ul>
+              </div>
+            </section>
           </div>
-        </section>
+        </article>
       </div>
     </main>
 
@@ -66,5 +461,6 @@
         <p>&copy; 2026 Leo Gordijn. Alle rechten voorbehouden.</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
