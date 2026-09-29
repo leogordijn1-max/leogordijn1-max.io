@@ -1,0 +1,554 @@
+<!doctype html>
+
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WPFW Opdracht 2 | Leo Gordijn</title>
+
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="nav-home" href="../index.html">Leo Gordijn</a>
+
+        <ul class="nav-links">
+          <li><a href="../whoami.html">Whoami</a></li>
+          <li><a href="../projecten-overzicht.html">Projecten</a></li>
+          <li><a href="../blog-overzicht.html">Blog</a></li>
+        </ul>
+
+        <a class="nav-contact" href="../contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <main class="blog-page">
+      <div class="container">
+        <header class="blog-intro">
+          <h1>WPFW Opdracht 2</h1>
+
+          <p>
+            Voor deze opdracht heb ik mijn bestaande portfolio interactief
+            gemaakt met JavaScript. In deze blog laat ik stap voor stap zien
+            welke interactieve onderdelen ik heb toegevoegd en wat ik daarbij
+            heb geleerd.
+          </p>
+
+          <div class="blog-tech">
+            <span>JavaScript</span>
+            <span>DOM</span>
+            <span>Events</span>
+            <span>Form validation</span>
+            <span>Fetch API</span>
+          </div>
+        </header>
+
+        <!-- STAP 1 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">01</div>
+
+          <div>
+            <h2>Begin van de opdracht</h2>
+
+            <p>
+              In de vorige opdracht had ik de basis van mijn portfolio gemaakt
+              met HTML en CSS. De website was responsive en de verschillende
+              pagina's waren met elkaar verbonden, maar er zat nog weinig
+              interactie in de website.
+            </p>
+
+            <p>
+              Voor deze opdracht moest ik mijn bestaande website interactiever
+              maken met JavaScript. Hierbij moest ik onder andere interacties
+              toevoegen die de DOM aanpassen, een formulier valideren, content
+              vanuit gestructureerde data weergeven en gegevens ophalen van een
+              externe API.
+            </p>
+
+            <p>
+              Ik heb ervoor gekozen om deze onderdelen toe te voegen aan mijn
+              bestaande portfolio in plaats van losse voorbeelden te maken.
+              Hierdoor zijn de JavaScript-onderdelen ook echt onderdeel geworden
+              van de website.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 2 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">02</div>
+
+          <div>
+            <h2>JavaScript toevoegen aan mijn portfolio</h2>
+
+            <p>
+              Voor de interactieve onderdelen heb ik een
+              <code>script.js</code>-bestand gebruikt. Dit bestand koppel ik aan
+              de pagina's waarop JavaScript nodig is.
+            </p>
+
+            <p>
+              Tijdens deze opdracht heb ik geleerd hoe JavaScript kan
+              samenwerken met mijn HTML. Met bijvoorbeeld
+              <code>querySelector</code> en <code>querySelectorAll</code>
+              kan ik HTML-elementen vanuit JavaScript selecteren.
+            </p>
+
+            <p>
+              Vervolgens kan ik met <code>addEventListener</code> reageren op
+              acties van een gebruiker, zoals het klikken op een knop of het
+              versturen van een formulier.
+            </p>
+
+            <p>
+              Ik heb mijn JavaScript zoveel mogelijk verdeeld over functies met
+              een eigen taak. Hierdoor staat niet alle code door elkaar en kan
+              ik functies makkelijker opnieuw gebruiken of aanpassen.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 3 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">03</div>
+
+          <div>
+            <h2>Projecten vanuit JavaScript weergeven</h2>
+
+            <p>
+              Een van de eisen van de opdracht was om content vanuit
+              gestructureerde data weer te geven. Hiervoor heb ik mijn projecten
+              in een JavaScript-array gezet.
+            </p>
+
+            <p>
+              Ieder project is een object met eigenschappen zoals de titel,
+              categorie, programmeertaal, beschrijving, mijn bijdrage en wat ik
+              van het project heb geleerd.
+            </p>
+
+            <p>
+              Met de functie <code>renderProjects()</code> loop ik door deze
+              projecten heen. Voor ieder project wordt met JavaScript een nieuw
+              <code>article</code>-element gemaakt. De informatie uit het object
+              wordt daarna in dit element geplaatst.
+            </p>
+
+            <p>
+              Hierdoor hoef ik de volledige HTML van ieder project niet
+              handmatig op mijn projectenpagina te schrijven. Wanneer ik later
+              een project wil toevoegen, kan ik een nieuw object aan de array
+              toevoegen.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 4 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">04</div>
+
+          <div>
+            <h2>Projecten filteren</h2>
+
+            <p>
+              Nadat mijn projecten vanuit JavaScript werden weergegeven, heb ik
+              een filter toegevoegd. Boven de projecten staan knoppen voor Alle,
+              School en Persoonlijk.
+            </p>
+
+            <p>
+              Met <code>addEventListener</code> controleer ik op welke knop de
+              gebruiker klikt. De waarde van <code>data-filter</code> wordt
+              vervolgens gebruikt om te bepalen welke projecten zichtbaar moeten
+              worden.
+            </p>
+
+            <p>
+              In de functie <code>filterProjects()</code> gebruik ik
+              <code>filter()</code> om alleen projecten met de gekozen categorie
+              over te houden. Daarna gebruik ik opnieuw
+              <code>renderProjects()</code> om de juiste projecten op de pagina
+              te tonen.
+            </p>
+
+            <p>
+              Op dit moment heb ik alleen een echt schoolproject in mijn
+              portfolio. Om te controleren of het filter voor persoonlijke
+              projecten ook werkte, heb ik tijdens het testen tijdelijk een
+              persoonlijk testproject toegevoegd. Nadat ik had gecontroleerd dat
+              het filter werkte, heb ik dit testproject weer verwijderd.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 5 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">05</div>
+
+          <div>
+            <h2>Mijn blog interactief maken</h2>
+
+            <p>
+              Ook op mijn blogoverzicht wilde ik JavaScript gebruiken. Bij
+              iedere blog staat daarom een knop waarmee een bezoeker extra
+              informatie kan openen en weer sluiten.
+            </p>
+
+            <p>
+              De extra informatie staat standaard verborgen met het
+              <code>hidden</code>-attribuut. Wanneer de gebruiker op "Meer
+              informatie" klikt, zoekt JavaScript eerst de juiste blog met
+              <code>closest()</code>.
+            </p>
+
+            <p>
+              Daarna wordt de extra informatie zichtbaar gemaakt en verandert de
+              tekst van de knop naar "Minder informatie". Wanneer opnieuw op de
+              knop wordt geklikt, wordt de informatie weer verborgen.
+            </p>
+
+            <p>
+              Hiervoor heb ik een aparte functie
+              <code>toggleBlog()</code> gemaakt. Dezelfde functie kan daardoor
+              voor meerdere blogs op het blogoverzicht worden gebruikt.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 6 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">06</div>
+
+          <div>
+            <h2>Contactformulier valideren</h2>
+
+            <p>
+              Voor mijn contactpagina heb ik een formulier gemaakt met de velden
+              naam, e-mail en bericht. Met JavaScript controleer ik de invoer
+              voordat het formulier als correct wordt beschouwd.
+            </p>
+
+            <p>
+              Hiervoor heb ik aparte functies gemaakt:
+              <code>validateName()</code>, <code>validateEmail()</code> en
+              <code>validateMessage()</code>. Iedere functie heeft één taak en
+              controleert één invoerveld.
+            </p>
+
+            <p>
+              Een naam mag niet leeg zijn, het e-mailadres moet een geldig
+              e-mailadres zijn en het bericht moet minimaal tien tekens
+              bevatten. Wanneer een veld niet geldig is, wordt onder dat veld
+              een foutmelding weergegeven.
+            </p>
+
+            <p>
+              Bij het versturen gebruik ik
+              <code>event.preventDefault()</code>. Hierdoor wordt het formulier
+              niet direct verstuurd en kan JavaScript eerst alle invoer
+              controleren.
+            </p>
+
+            <p>
+              Wanneer alle drie de velden geldig zijn, verschijnt een
+              bevestiging dat het bericht correct is ingevuld en worden de
+              velden geleegd.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 7 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">07</div>
+
+          <div>
+            <h2>Toegankelijke feedback</h2>
+
+            <p>
+              Bij het contactformulier wilde ik niet alleen foutmeldingen laten
+              zien, maar deze ook op een toegankelijke manier aan de
+              invoervelden koppelen.
+            </p>
+
+            <p>
+              Hiervoor gebruik ik <code>aria-describedby</code>. Hiermee is
+              bijvoorbeeld het naamveld gekoppeld aan de foutmelding die bij dat
+              veld hoort.
+            </p>
+
+            <p>
+              Voor de algemene bevestiging van het formulier gebruik ik
+              <code>aria-live="polite"</code>. Hierdoor kan een screenreader een
+              verandering in deze tekst doorgeven zonder dat de gebruiker zelf
+              naar het bericht hoeft te navigeren.
+            </p>
+
+            <p>
+              Ik gebruik daarnaast <code>novalidate</code> op het formulier.
+              Hierdoor gebruikt de browser niet zijn eigen standaard
+              foutmeldingen, maar kan ik mijn eigen JavaScript-validatie en
+              foutmeldingen laten zien.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 8 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">08</div>
+
+          <div>
+            <h2>Gegevens ophalen met een API</h2>
+
+            <p>
+              Een ander onderdeel van de opdracht was het ophalen van actuele of
+              externe gegevens met een publieke API. Hiervoor heb ik de
+              Wikipedia API gebruikt op mijn Whoami-pagina.
+            </p>
+
+            <p>
+              Op deze pagina vertel ik over SV Nootdorp, ADO Den Haag en
+              Liverpool. Naast mijn eigen verhaal haal ik voor deze clubs
+              aanvullende informatie op van Wikipedia.
+            </p>
+
+            <p>
+              In mijn HTML geef ik met een
+              <code>data-wikipedia</code>-attribuut aan welke Wikipedia-pagina
+              moet worden opgehaald. JavaScript leest deze waarde en gebruikt
+              <code>fetch()</code> om de gegevens op te vragen.
+            </p>
+
+            <p>
+              Omdat het ophalen van gegevens tijd kan kosten, gebruik ik een
+              <code>async</code>-functie en <code>await</code>. Uit het
+              JSON-resultaat gebruik ik onder andere
+              <code>data.extract</code> om een stukje tekst over de club
+              dynamisch op de pagina te zetten.
+            </p>
+
+            <p>
+              Tijdens het laden staat er eerst een laadmelding op de pagina. Het
+              ophalen van externe gegevens kan ook mislukken. Daarom staat de
+              <code>fetch()</code> in een <code>try/catch</code>. Wanneer er een
+              fout ontstaat, krijgt de bezoeker een foutmelding in plaats van
+              een lege plek op de website.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 9 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">09</div>
+
+          <div>
+            <h2>Testen en verbeteren</h2>
+
+            <p>
+              Tijdens het toevoegen van JavaScript heb ik de verschillende
+              onderdelen steeds afzonderlijk getest. Zo heb ik gecontroleerd of
+              de projectfilters de juiste projecten tonen, of de bloginformatie
+              geopend en gesloten kan worden en of het contactformulier
+              ongeldige invoer tegenhoudt.
+            </p>
+
+            <p>
+              Bij het contactformulier heb ik bijvoorbeeld getest wat er gebeurt
+              wanneer velden leeg zijn, wanneer een ongeldig e-mailadres wordt
+              ingevuld en wanneer het bericht te kort is. Daarna heb ik ook
+              gecontroleerd of bij geldige invoer de succesmelding verschijnt.
+            </p>
+
+            <p>
+              Bij de Wikipedia API heb ik gecontroleerd of de informatie voor
+              alle drie de clubs wordt geladen en of er tijdens het laden een
+              melding zichtbaar is.
+            </p>
+
+            <p>
+              Omdat hetzelfde <code>script.js</code>-bestand op meerdere
+              pagina's wordt gebruikt, moest ik er ook rekening mee houden dat
+              bepaalde HTML-elementen niet op iedere pagina bestaan. Bij het
+              contactformulier controleer ik daarom eerst met
+              <code>if (form)</code> of het formulier op de huidige pagina
+              aanwezig is voordat ik een eventlistener toevoeg.
+            </p>
+
+            <p>
+              Hiermee voorkom ik dat JavaScript op andere pagina's probeert te
+              werken met een element dat daar niet bestaat en daardoor een fout
+              in de console veroorzaakt.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 10 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">10</div>
+
+          <div>
+            <h2>Feedback en verwerking</h2>
+
+            <p>
+              Nadat ik de interactieve onderdelen had toegevoegd, heb ik alle
+              HTML-pagina's opnieuw gecontroleerd met de W3C HTML Checker.
+              Hierbij kwamen nog enkele fouten en waarschuwingen naar voren. Zo
+              gebruikte ik bij een afbeelding een backslash in het bestandspad
+              en gebruikte ik een section zonder bijbehorende heading. Ik heb
+              het bestandspad aangepast en de section vervangen door een div,
+              omdat deze alleen voor de layout werd gebruikt. Na deze
+              aanpassingen heb ik alle pagina's opnieuw gecontroleerd. Alle
+              pagina's worden nu zonder fouten of waarschuwingen goedgekeurd
+              door de W3C HTML Checker.
+            </p>
+
+            <p>
+              <!-- Vul hier de feedback in die je van je docent of
+              medestudenten over opdracht 2 hebt gekregen. -->
+              De ontvangen feedback voor deze opdracht en hoe ik deze heb
+              verwerkt, voeg ik hier toe nadat ik de feedback heb ontvangen.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 11 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">11</div>
+
+          <div>
+            <h2>Wat heb ik geleerd?</h2>
+
+            <p>
+              Tijdens deze opdracht heb ik geleerd hoe ik JavaScript kan
+              gebruiken om een statische website interactief te maken. Ik
+              begrijp nu beter hoe JavaScript elementen uit de DOM kan
+              selecteren en aanpassen.
+            </p>
+
+            <p>
+              Ook heb ik geleerd hoe eventlisteners werken en hoe ik functies
+              kan gebruiken om mijn code op te delen. Bij mijn projecten heb ik
+              daarnaast gewerkt met arrays, objecten,
+              <code>forEach()</code> en <code>filter()</code>.
+            </p>
+
+            <p>
+              Door het contactformulier heb ik meer geleerd over
+              formuliervalidatie en toegankelijkheid. Ik heb gezien dat het niet
+              alleen belangrijk is om ongeldige invoer tegen te houden, maar ook
+              om duidelijk aan de gebruiker te vertellen wat er fout is.
+            </p>
+
+            <p>
+              Het werken met de Wikipedia API was voor mij een nieuwe stap.
+              Hierdoor heb ik geleerd hoe ik met <code>fetch()</code> gegevens
+              van buiten mijn eigen website kan ophalen en hoe ik met
+              <code>async</code>, <code>await</code> en
+              <code>try/catch</code> om kan gaan met het laden en mogelijke
+              fouten.
+            </p>
+
+            <p>
+              Ik heb ook geleerd dat JavaScript-code niet alleen moet werken,
+              maar dat het belangrijk is om de code overzichtelijk te houden.
+              Door functies een duidelijke eigen taak te geven kan ik de code
+              makkelijker begrijpen, testen en later aanpassen.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 12 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">12</div>
+
+          <div>
+            <h2>Zelfstudie en AI-hulp</h2>
+
+            <p>
+              <!-- Vul hier je echte aantal uren in. -->
+              Voor deze opdracht heb ik in totaal ongeveer ... uur aan
+              zelfstudie besteed. Deze tijd heb ik onder andere gebruikt voor
+              het leren en toepassen van JavaScript, het maken van de
+              interacties, het contactformulier, de API en het testen van mijn
+              website.
+            </p>
+
+            <p>
+              Tijdens deze opdracht heb ik ChatGPT gebruikt voor uitleg over
+              JavaScript en voor hulp wanneer onderdelen van mijn code niet
+              werkten zoals verwacht. Ook heb ik ChatGPT gebruikt om mee te
+              kijken naar mijn code en om oplossingen beter te begrijpen.
+            </p>
+
+            <p>
+              Bij de gegeven oplossingen heb ik geprobeerd te begrijpen wat de
+              verschillende functies en JavaScript-methodes doen. Ik heb de code
+              daarna toegepast en getest in mijn eigen website, zodat ik de
+              werking ervan zelf kan uitleggen.
+            </p>
+          </div>
+        </section>
+
+        <!-- STAP 13 -->
+
+        <section class="blog-content card">
+          <div class="blog-number">13</div>
+
+          <div>
+            <h2>Bronnen</h2>
+
+            <p>
+              Tijdens deze opdracht heb ik documentatie en hulpmiddelen gebruikt
+              om meer te leren over JavaScript en de technieken die ik in mijn
+              portfolio heb toegepast.
+            </p>
+
+            <ul>
+              <li>
+                MDN Web Docs: gebruikt voor documentatie over JavaScript,
+                DOM-manipulatie, events en verschillende JavaScript-methodes.
+              </li>
+
+              <li>
+                MDN Web Docs: gebruikt voor meer informatie over
+                <code>fetch()</code> en het ophalen en verwerken van externe
+                gegevens.
+              </li>
+
+              <li>
+                Wikipedia API: gebruikt om externe informatie over SV Nootdorp,
+                ADO Den Haag en Liverpool op mijn Whoami-pagina weer te geven.
+              </li>
+
+              <li>
+                ChatGPT: gebruikt voor uitleg over JavaScript, hulp bij
+                problemen in mijn code en feedback op de interactieve onderdelen
+                van mijn portfolio.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Leo Gordijn. Alle rechten voorbehouden.</p>
+      </div>
+    </footer>
+  </body>
+</html>

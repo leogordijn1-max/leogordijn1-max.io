@@ -1,59 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+      name="description"
+      content="Bekijk de projecten van Leo Gordijn en lees meer over zijn werk, bijdrage en wat hij tijdens deze projecten heeft geleerd.">
+
     <title>Projecten | Leo Gordijn</title>
     <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
+    <script src="script.js" defer></script>
+  </head>
 
+  <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <a class="nav-home" href="index.html">Leo Gordijn</a>
+      <div class="nav-container">
+        <a class="nav-home" href="index.html">Leo Gordijn</a>
 
-            <ul class="nav-links">
-                <li><a href="whoami.html">Whoami</a></li>
-                <li><a href="projecten-overzicht.html">Projecten</a></li>
-                <li><a href="blog-overzicht.html">Blog</a></li>
-            </ul>
+        <ul class="nav-links">
+          <li><a href="whoami.html">Whoami</a></li>
+          <li><a href="projecten-overzicht.html">Projecten</a></li>
+          <li><a href="blog-overzicht.html">Blog</a></li>
+        </ul>
 
-            <a class="nav-contact" href="contact.html">Contact</a>
-        </div>
+        <a class="nav-contact" href="contact.html">Contact</a>
+      </div>
     </nav>
 
     <main class="container">
+      <header class="page-header">
+        <h1>Projecten</h1>
+        <p>
+          Hier vind je projecten waar ik tijdens mijn opleiding en in mijn vrije
+          tijd aan heb gewerkt.
+        </p>
+      </header>
 
-        <header class="page-header">
-            <h1>Projecten</h1>
-            <p>
-                Hier vind je projecten waar ik tijdens mijn opleiding
-                en in mijn vrije tijd aan heb gewerkt.
-            </p>
-        </header>
+      <section class="project-category">
+        <h2>Mijn projecten</h2>
 
-        <section class="project-category">
-            <h2>Mijn projecten</h2>
+        <div class="project-filters">
+          <button data-filter="alle">Alle</button>
+          <button data-filter="school">School</button>
+          <button data-filter="persoonlijk">Persoonlijk</button>
+        </div>
 
-            <div class="project-filters">
-                <button data-filter="alle">Alle</button>
-                <button data-filter="school">School</button>
-                <button data-filter="persoonlijk">Persoonlijk</button>
-            </div>
-
-            <div id="project-list"></div>
-        </section>
-
+        <div id="project-list"></div>
+      </section>
     </main>
 
     <footer>
-        <p>© 2026 Leo Gordijn</p>
+      <p>© 2026 Leo Gordijn</p>
     </footer>
-
-    <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
